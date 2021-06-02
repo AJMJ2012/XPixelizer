@@ -1,0 +1,28 @@
+version "3.0"
+
+class PixelizerHandler : EventHandler
+{
+	override void UiTick()
+	{
+		PlayerInfo p = players[consoleplayer];
+		if (Cvar.GetCVar("r_pixelizer", p).GetBool() && Cvar.GetCVar("r_pixelizer_pixel", p).GetInt() > 0)
+		{
+			if (Cvar.GetCVar("r_pixelizer_hud", p).GetBool()) {
+				Shader.SetUniform1f(p, "Pixelizer", "pixHeight", Cvar.GetCVar("r_pixelizer_pixel", p).GetInt());
+				Shader.SetUniform1f(p, "Pixelizer", "pixAspect", Cvar.GetCVar("r_pixelizer_aspect", p).GetFloat());
+				Shader.SetEnabled(p, "Pixelizer", true);
+				Shader.SetEnabled(p, "Pixelizer2", false);
+			}
+			else {
+				Shader.SetUniform1f(p, "Pixelizer2", "pixHeight", Cvar.GetCVar("r_pixelizer_pixel", p).GetInt());
+				Shader.SetUniform1f(p, "Pixelizer2", "pixAspect", Cvar.GetCVar("r_pixelizer_aspect", p).GetFloat());
+				Shader.SetEnabled(p, "Pixelizer", false);
+				Shader.SetEnabled(p, "Pixelizer2", true);
+			}
+		}
+		else {
+			Shader.SetEnabled(p, "Pixelizer", false);
+			Shader.SetEnabled(p, "Pixelizer2", false);
+		}
+	}
+}

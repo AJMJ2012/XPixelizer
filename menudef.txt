@@ -1,0 +1,13 @@
+AddOptionMenu "OptionsMenu"
+{
+	Submenu "Pixelizer", "Pixelizer"
+}
+
+OptionMenu "Pixelizer"
+{
+	Title "Pixelizer"
+	Option "Enable", "r_pixelizer", "YesNo"
+	Slider "Pixelation", "r_pixelizer_pixel", 100, 400, 20, 0, "r_pixelizer"
+	Slider "Aspect Correction", "r_pixelizer_aspect", 0.8, 1.2, 0.1, 1, "r_pixelizer"
+	Option "Affect HUD Weapons", "r_pixelizer_hud", "YesNo", "r_pixelizer"
+}
