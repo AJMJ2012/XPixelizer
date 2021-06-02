@@ -1,0 +1,2 @@
+# XPixelizer
+Pixelizer for GZDoom
