@@ -1,4 +1,4 @@
-user bool r_pixelizer = true;
+user bool r_pixelizer = false;
 user int r_pixelizer_pixel = 200;
 user float r_pixelizer_aspect = 1.2;
 user bool r_pixelizer_hud = true;
