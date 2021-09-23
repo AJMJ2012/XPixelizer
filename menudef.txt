@@ -1,10 +1,8 @@
-AddOptionMenu "OptionsMenu"
-{
+AddOptionMenu "OptionsMenu" {
 	Submenu "Pixelizer", "Pixelizer"
 }
 
-OptionMenu "Pixelizer"
-{
+OptionMenu "Pixelizer" {
 	Title "Pixelizer"
 	Option "Enable", "r_pixelizer", "YesNo"
 	Slider "Pixelation Height", "r_pixelizer_pixel", 100, 400, 20, 0, "r_pixelizer"
