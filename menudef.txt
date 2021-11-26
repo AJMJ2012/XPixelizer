@@ -4,8 +4,19 @@ AddOptionMenu "OptionsMenu" {
 
 OptionMenu "Pixelizer" {
 	Title "Pixelizer"
-	Option "Enable", "r_pixelizer", "YesNo"
-	Slider "Pixelation Height", "r_pixelizer_pixel", 100, 400, 20, 0, "r_pixelizer"
-	Slider "Aspect Correction", "r_pixelizer_aspect", 0.8, 1.2, 0.1, 1, "r_pixelizer"
-	Option "Affect HUD Weapons", "r_pixelizer_hud", "YesNo", "r_pixelizer"
+	Option "Enable", "YesNo"
+	Option "Affect HUD Weapons", "r_pixelizer_hud", "YesNo"
+	StaticText ""
+	StaticText "Presets", 1
+	Command "Doom x0.5", "pixelizer_preset_doom_0.5"
+	Command "Doom x1.0", "pixelizer_preset_doom_1.0"
+	Command "Doom x2.0", "pixelizer_preset_doom_2.0"
+	Command "Srandard x0.5", "pixelizer_preset_standard_0.5"
+	Command "Srandard x1.0", "pixelizer_preset_standard_1.0"
+	Command "Srandard x2.0", "pixelizer_preset_standard_2.0"
+
+	StaticText ""
+	StaticText "Manual Adjustment", 1
+	Slider "Pixelation", "r_pixelizer_pixel", 100, 480, 20, 0
+	Slider "Aspect Correction", "r_pixelizer_aspect", 0.8, 1.2, 0.1, 1
 }

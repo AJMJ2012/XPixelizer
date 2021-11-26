@@ -1,13 +1,13 @@
 HardwareShader PostProcess Scene {
 	Name "Pixelizer"
 	Shader "shaders/pixelizer.fp" 330
-	Uniform float pixHeight
-	Uniform float pixAspect
+	Uniform float pixelSize
+	Uniform float pixelAspect
 }
 
 HardwareShader PostProcess BeforeBloom {
-	Name "Pixelizer2"
+	Name "Pixelizer+HUD"
 	Shader "shaders/pixelizer.fp" 330
-	Uniform float pixHeight
-	Uniform float pixAspect
+	Uniform float pixelSize
+	Uniform float pixelAspect
 }

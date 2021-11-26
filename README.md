@@ -1,2 +1,2 @@
 # XPixelizer
-Pixelizer for GZDoom
+Pixelation shader for GZDoom

@@ -1,0 +1,6 @@
+alias pixelizer_preset_doom_0.5 "r_pixelizer_pixel 100; r_pixelizer_aspect 1.2"
+alias pixelizer_preset_doom_1.0 "r_pixelizer_pixel 200; r_pixelizer_aspect 1.2"
+alias pixelizer_preset_doom_2.0 "r_pixelizer_pixel 400; r_pixelizer_aspect 1.2"
+alias pixelizer_preset_standard_0.5 "r_pixelizer_pixel 120; r_pixelizer_aspect 1.0"
+alias pixelizer_preset_standard_1.0 "r_pixelizer_pixel 240; r_pixelizer_aspect 1.0"
+alias pixelizer_preset_standard_2.0 "r_pixelizer_pixel 480; r_pixelizer_aspect 1.0"
